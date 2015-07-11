@@ -1,0 +1,11 @@
+% First Part : Get FFT Of Rect In Each Dim
+image=imread('Rect.jpg'); % Loading Rect Image
+image=rgb2gray(image); % Convert Image To Double
+figure(1);
+imshow(fft(image,[],1));
+figure(2);
+imshow(fft(image,[],2));
+figure(3);
+imshow(fft2(image))
+
+
